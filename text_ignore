@@ -2,7 +2,6 @@ cd SA
 git init
 git remote add origin https://github.com/lucasgriesang/SA.git
 git add .
-git add .gitignore
-git commit -m "Configuração Inicial do Projeto"
+git commit -m "Update"
 git branch -M main
 git push -u origin main
