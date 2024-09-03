@@ -12,7 +12,7 @@ const Login = () => {
     // Aqui você pode adicionar a lógica para autenticar o usuário
     console.log('Login', { email, password });
     // Redirecionar para uma página ou ação após o login bem-sucedido
-navigate ('./pagina/pagina');
+navigate ('./pagina/Tudo');
     
 
   };
@@ -44,7 +44,9 @@ navigate ('./pagina/pagina');
         <button type="submit" onClick={handleLogin} >Entrar</button>
         <p>
           Não tem uma conta? <a href="/signup" >Cadastre-se</a>
+
         </p>
+     
       </form>
     </div>
     </div>

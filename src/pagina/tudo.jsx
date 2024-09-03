@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const App = () => {
+const tudo = () => {
   const [pagina, setPagina] = useState('sobre');
 
   const renderizarPagina = () => {
@@ -8,16 +8,23 @@ const App = () => {
       case 'sobre':
         return (
           <div>
-            <h2>Sobre a Empresa</h2>
-            <p>Informações sobre a empresa...</p>
+            <h2>Cadastro lixo </h2>
+            <p>Cadastre o lixo aqui em baixo </p>
+            <p>
+              <a href="./Pagina" >Aqui!!</a>
+          
+        </p>
           </div>
-
         );
       case 'comoFunciona':
         return (
           <div>
-            <h2>Como Funciona</h2>
+            <h2>Como Funciona  </h2>
             <p>Explicação de como funciona...</p>
+            <p>
+            contato <a href="./pagina/lixo" >Aqui!!</a>
+          
+        </p>
           </div>
 
         );
@@ -26,27 +33,27 @@ const App = () => {
           <div>
             <h2>Contato</h2>
             <p>Informações de contato...</p>
+            <p>
+            contato <a href="./pagina/lixo" >Aqui!!</a>
+          
+        </p>
           </div>
         );
       default:
         return (
           <div>
-            <h2>Sobre a Empresa</h2>
+            <h2>Cadastro lixo </h2>
             <p>Informações sobre a empresa...</p>
- 
- 
+         
           </div>
-  
-  );
-  
+        );
     }
   };
 
-  
   return (
     <div>
       <nav>
-        <button onClick={() => setPagina('sobre')}>Sobre a Empresa</button>
+        <button onClick={() => setPagina('sobre')}>Cadastro lixo</button>
         <button onClick={() => setPagina('comoFunciona')}>Como Funciona</button>
         <button onClick={() => setPagina('contato')}>Contato</button>
       </nav>
@@ -55,5 +62,4 @@ const App = () => {
   );
 };
 
-
-export default App;
+export default tudo;

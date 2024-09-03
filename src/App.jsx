@@ -3,11 +3,11 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Login from './components/Login';
 import Signup from './components/Signup';
 import Pagina from './pagina/Pagina'; 
-import contato from './pagina/contato';
-import erro from './pagina/erro';
-import lixo from './pagina/lixo';
-import tudo from './pagina/tudo';
-import gg from './pagina/gg';
+import Contato from './pagina/contato';
+import Erro from './pagina/erro';
+import Lixo from './pagina/lixo';   
+import Tudo from './pagina/tudo';
+import Gg from './pagina/gg';
 
 function App() {
   return (
@@ -16,11 +16,11 @@ function App() {
         <Routes>
           <Route path="/" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
-          <Route path="/pagina/contato" element={<contato />} /> {}
-          <Route path="/pagina/erro" element={<erro />} /> {}
-          <Route path="/pagina/tudo" element={<tudo />} /> {}
-          <Route path="/pagina/gg" element={<gg />} /> {}
-          <Route path="/pagina/pagina" element={<Pagina />} /> {}
+          <Route path="/pagina/Contato" element={<Contato />} /> {}
+          <Route path="/pagina/Erro" element={<Erro />} /> {}
+          <Route path="/pagina/Tudo" element={<Tudo />} /> {}
+          <Route path="/pagina/Gg" element={<Gg />} /> {}
+          <Route path="/pagina/Pagina" element={<Pagina />} /> {}
           
           
         </Routes>
