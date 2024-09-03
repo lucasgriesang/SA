@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { BrowserRouter as Link } from 'react-router-dom';
 
 const Login = () => {
   const [email, setEmail] = useState('');
@@ -11,6 +12,9 @@ const Login = () => {
     // Aqui você pode adicionar a lógica para autenticar o usuário
     console.log('Login', { email, password });
     // Redirecionar para uma página ou ação após o login bem-sucedido
+navigate ('./pagina/pagina');
+    
+
   };
 
   return (
@@ -37,9 +41,9 @@ const Login = () => {
             required
           />
         </label>
-        <button type="submit">Entrar</button>
+        <button type="submit" onClick={handleLogin} >Entrar</button>
         <p>
-          Não tem uma conta? <a href="/signup">Cadastre-se</a>
+          Não tem uma conta? <a href="/signup" >Cadastre-se</a>
         </p>
       </form>
     </div>

@@ -50,7 +50,7 @@ const Signup = () => {
             required
           />
         </label>
-        <button type="submit">Cadastrar</button>
+        <button type="submit" >Cadastrar</button>
         <p>
           Já tem uma conta? <a href="/">Entrar</a>
         </p>
