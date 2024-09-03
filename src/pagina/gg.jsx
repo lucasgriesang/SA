@@ -1,8 +1,21 @@
-import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
-import { BrowserRouter as Link } from 'react-router-dom';
+import React from 'react';
+import { Link } from 'react-router-dom';
 
-function Gg (){
+function gg() {
+    return (
+        <div className='quem'>
+            <h1>Lixo entregue com sucesso  </h1><br />
+            <h2>Muito obrigado </h2><br />
+        
+           
+            <p>
+                Voltar  <a href="./tudo">Aqui!</a>
+            </p>
+        </div>
 
+
+
+    );
 }
-export default Gg;
+
+export default gg;

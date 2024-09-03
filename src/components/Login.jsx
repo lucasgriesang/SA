@@ -9,9 +9,9 @@ const Login = () => {
 
   const handleLogin = (e) => {
     e.preventDefault();
-    // Aqui você pode adicionar a lógica para autenticar o usuário
+   
     console.log('Login', { email, password });
-    // Redirecionar para uma página ou ação após o login bem-sucedido
+
 navigate ('./pagina/Tudo');
     
 

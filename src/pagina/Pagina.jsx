@@ -42,11 +42,22 @@ function Pagina() {
                     placeholder="Digite a data/mês"
                 />
                 <p>
-                Sair da conta <a href="/">Deslogar</a>
+                Confirma   <a href="./gg">Aqui!</a>
+
+                </p>
+                <p>
+                Confirma(com erro )   <a href="./erro">Aqui!</a>
+
+                </p>
+                <p>
+                    Voltar  <a href="./tudo">Aqui!</a>
+                </p>
+                <p>
+                    Sair da conta <a href="/">Deslogar</a>
                 </p>
             </div>
         </div>
-        
+
     );
 }
 

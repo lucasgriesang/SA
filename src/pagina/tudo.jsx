@@ -22,7 +22,7 @@ const tudo = () => {
             <h2>Como Funciona  </h2>
             <p>Explicação de como funciona...</p>
             <p>
-            contato <a href="./pagina/lixo" >Aqui!!</a>
+            contato <a href="./lixo" >Aqui!!</a>
           
         </p>
           </div>
@@ -34,7 +34,7 @@ const tudo = () => {
             <h2>Contato</h2>
             <p>Informações de contato...</p>
             <p>
-            contato <a href="./pagina/lixo" >Aqui!!</a>
+            contato <a href="./contato" >Aqui!!</a>
           
         </p>
           </div>
@@ -56,6 +56,8 @@ const tudo = () => {
         <button onClick={() => setPagina('sobre')}>Cadastro lixo</button>
         <button onClick={() => setPagina('comoFunciona')}>Como Funciona</button>
         <button onClick={() => setPagina('contato')}>Contato</button>
+     
+
       </nav>
       {renderizarPagina()}
     </div>

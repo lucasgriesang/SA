@@ -21,7 +21,7 @@ function App() {
           <Route path="/pagina/Tudo" element={<Tudo />} /> {}
           <Route path="/pagina/Gg" element={<Gg />} /> {}
           <Route path="/pagina/Pagina" element={<Pagina />} /> {}
-          
+          <Route path="/pagina/lixo" element={<Lixo />} />
           
         </Routes>
       </div>
