@@ -1,14 +1,18 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { BrowserRouter as Link } from 'react-router-dom';
 
 const Signup = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
-  const navigate = useNavigate();
 
   const handleSignup = (e) => {
     e.preventDefault();
+  const navigate = useNavigate();
+  navigate ('./pagina/pagina');
+
+
     if (password !== confirmPassword) {
       alert('As senhas não coincidem');
       return;
@@ -50,7 +54,7 @@ const Signup = () => {
             required
           />
         </label>
-        <button type="submit" >Cadastrar</button>
+        <button type="submit" onClick={handleSignup}  >Cadastrar</button>
         <p>
           Já tem uma conta? <a href="/">Entrar</a>
         </p>

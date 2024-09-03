@@ -41,8 +41,12 @@ function Pagina() {
                     onChange={handleDataMesChange}
                     placeholder="Digite a data/mês"
                 />
+                <p>
+                Sair da conta <a href="/">Deslogar</a>
+                </p>
             </div>
         </div>
+        
     );
 }
 
