@@ -11,16 +11,14 @@ const Signup = () => {
   const handleSignup = (e) => {
     e.preventDefault();
   const navigate = useNavigate();
-  navigate ('./pagina/pagina');
+  navigate ('./pagina/Tudo');
 
 
     if (password !== confirmPassword) {
       alert('As senhas não coincidem');
       return;
     }
-    // Aqui você pode adicionar a lógica para criar uma nova conta
     console.log('Signup', { email, password });
-    // Redirecionar para uma página ou ação após o cadastro bem-sucedido
   };
 
   return (

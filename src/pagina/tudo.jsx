@@ -13,7 +13,10 @@ const tudo = () => {
             <p>Cadastre o lixo aqui em baixo </p>
             <p>
               <a href="./Pagina" >Aqui!!</a>
-          
+              <p>
+                    Sair da conta <a href="/">Deslogar</a>
+                </p>
+                
         </p>
           </div >
         );
@@ -24,7 +27,10 @@ const tudo = () => {
             <p>Explicação de como funciona...</p>
             <p>
             contato <a href="./lixo" >Aqui!!</a>
-          
+            <p>
+                    Sair da conta <a href="/">Deslogar</a>
+                </p>
+                
         </p>
           </div>
 
@@ -36,7 +42,10 @@ const tudo = () => {
             <p>Informações de contato...</p>
             <p>
             contato <a href="./contato" >Aqui!!</a>
-          
+            <p>
+                    Sair da conta <a href="/">Deslogar</a>
+                </p>
+                
         </p>
           </div>
         );
@@ -45,7 +54,10 @@ const tudo = () => {
           <div>
             <h2>Cadastro lixo </h2>
             <p>Informações sobre a empresa...</p>
-         
+            <p>
+                    Sair da conta <a href="/">Deslogar</a>
+                </p>
+                
           </div>
         );
     }
