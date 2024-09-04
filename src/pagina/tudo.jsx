@@ -44,8 +44,7 @@ const tudo = () => {
             contato <a href="./contato" >Aqui!!</a>
             <p>
                     Sair da conta <a href="/">Deslogar</a>
-                </p>
-                
+                </p>     
         </p>
           </div>
         );
@@ -67,9 +66,9 @@ const tudo = () => {
     <div>
       <img src={logo} alt="logo" style={{width: '30px',width: '150px',}} /><br />
       <nav>
-        <button className='but'  onClick={() => setPagina('sobre')}>Cadastro lixo</button>
-        <button className='but'  onClick={() => setPagina('comoFunciona')}>Como Funciona</button>
-        <button className='but'  onClick={() => setPagina('contato')}>Contato</button>
+        <button className='but'  onClick={() => setPagina('sobre')}>Cadastro lixo</button><br />
+        <button className='but'  onClick={() => setPagina('comoFunciona')}>Como Funciona</button><br />
+        <button className='but'  onClick={() => setPagina('contato')}>Contato</button><br />
      
 
 

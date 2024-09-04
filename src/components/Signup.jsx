@@ -7,24 +7,18 @@ const Signup = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
+  const navigate = useNavigate();
 
   const handleSignup = (e) => {
     e.preventDefault();
-  const navigate = useNavigate();
-  navigate ('./pagina/Tudo');
+    navigate ('../pagina/Tudo');
+    console.log('Login', { email, password });
 
-
-    if (password !== confirmPassword) {
-      alert('As senhas não coincidem');
-      return;
-    }
-    console.log('Signup', { email, password });
   };
-
   return (
     <div className="auth-container">
       <div class="teste">
-      <h2>Cadastro </h2><br />
+      <h2 className='titulos'> Cadastro </h2><br />
       <form onSubmit={handleSignup}>
         <label>
           E-mail:
@@ -52,10 +46,11 @@ const Signup = () => {
             onChange={(e) => setConfirmPassword(e.target.value)}
             required
           />
-           <img src={logo} alt="logo" style={{width: '300px',width: '200px',}} />     
 
         </label>
-        <button type="submit" onClick={handleSignup}  >Cadastrar</button>
+        <button type="submit" onClick={handleSignup}  >Cadastrar</button><br />
+        <img src={logo} alt="logo" style={{width: '300px',width: '200px',}} />     
+
         <p>
           Já tem uma conta? <a href="/">Entrar</a>
         </p>

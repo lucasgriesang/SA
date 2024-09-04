@@ -11,10 +11,10 @@ const Login = () => {
 
   const handleLogin = (e) => {
     e.preventDefault();
-   
+    navigate ('./pagina/Tudo');
     console.log('Login', { email, password });
 
-navigate ('./pagina/Tudo');
+
     
 
   };
@@ -23,7 +23,7 @@ navigate ('./pagina/Tudo');
     
     <div className="auth-container">
     <div class="teste">
-      <h2>Login</h2>
+      <h2 className='titulos' >Login</h2>
       <form onSubmit={handleLogin}>
         <label>
           E-mail:
@@ -42,9 +42,10 @@ navigate ('./pagina/Tudo');
             onChange={(e) => setPassword(e.target.value)}
             required
           />
-          <img src={logo} alt="logo" style={{width: '300px',width: '200px',}} />     
+                  <button type="submit" onClick={handleLogin} >Entrar</button><br />
+
+          <img src={logo} alt="logo" style={{width: '300px',width: '200px',}} />   
         </label>
-        <button type="submit" onClick={handleLogin} >Entrar</button>
         <p>
           Não tem uma conta? <a href="/signup" >Cadastre-se</a>
 
