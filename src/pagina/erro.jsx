@@ -1,15 +1,23 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import logo from '../images/logo.png'
 
 function erro() {
     return (
         <div className='quem'>
             <h1>Ocoreu um erro </h1>
-            <h2>Causa pode ser  nome, CEP, cpf, numero ou algum problema em nosso sistema </h2>
-            <h2>Revise suas informações e tente novamente </h2>
-            <p >
+            <h2>Ocorreu um erro em seu site, por favor certifique-se de que as informações fornecidas estão corretas. 
+Caso haja algum engano, entre em contato aqui. 
+ </h2>
+            <p  className='erro' >
+                Contato  <a href="./contato">Aqui!</a>
+            </p>
+            <p className='erro' >
                 Voltar  <a href="./tudo">Aqui!</a>
             </p>
+
+<img src={logo} alt="logo" style={{width: '300px',width: '25em',}} />     
+          
         </div>
 
 

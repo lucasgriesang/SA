@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import logo from '../images/logo.png'
+
 
 function contato() {
     return (
@@ -12,6 +14,7 @@ function contato() {
             <p>
                 Voltar  <a href="./tudo">Aqui!</a>
             </p>
+            <img src={logo} alt="logo" style={{width: '300px',width: '25em',}} />      
         </div>
 
 

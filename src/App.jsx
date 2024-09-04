@@ -8,6 +8,7 @@ import Erro from './pagina/erro';
 import Lixo from './pagina/lixo';   
 import Tudo from './pagina/tudo';
 import Gg from './pagina/gg';
+import Teste from './teste/teste';
 
 function App() {
   return (
@@ -22,7 +23,9 @@ function App() {
           <Route path="/pagina/Gg" element={<Gg />} /> {}
           <Route path="/pagina/Pagina" element={<Pagina />} /> {}
           <Route path="/pagina/lixo" element={<Lixo />} />
-          
+          <Route path="/teste/teste" element={<Teste />} />
+                    
+                  
         </Routes>
       </div>
     </Router>

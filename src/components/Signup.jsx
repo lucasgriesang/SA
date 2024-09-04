@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { BrowserRouter as Link } from 'react-router-dom';
+import logo from '../images/logo.png'
 
 const Signup = () => {
   const [email, setEmail] = useState('');
@@ -53,11 +54,14 @@ const Signup = () => {
             onChange={(e) => setConfirmPassword(e.target.value)}
             required
           />
+           <img src={logo} alt="logo" style={{width: '300px',width: '200px',}} />     
+
         </label>
         <button type="submit" onClick={handleSignup}  >Cadastrar</button>
         <p>
           Já tem uma conta? <a href="/">Entrar</a>
         </p>
+       
       </form>
     </div>
     </div>

@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { BrowserRouter as Link } from 'react-router-dom';
 
+import logo from '../images/logo.png'
+
 const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -40,6 +42,7 @@ navigate ('./pagina/Tudo');
             onChange={(e) => setPassword(e.target.value)}
             required
           />
+          <img src={logo} alt="logo" style={{width: '300px',width: '200px',}} />     
         </label>
         <button type="submit" onClick={handleLogin} >Entrar</button>
         <p>

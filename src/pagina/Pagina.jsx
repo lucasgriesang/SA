@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-
+import logo from '../images/logo.png'
+ 
 
 function Pagina() {
     const [cep, setCep] = useState('');
@@ -41,7 +42,9 @@ function Pagina() {
                     onChange={handleDataMesChange}
                     placeholder="Digite a data/mês"
                 />
+                <img src={logo} alt="logo" style={{width: '300px',width: '200px',}} />    
                 <p>
+
                 Confirma   <a href="./gg">Aqui!</a>
 
                 </p>
@@ -55,6 +58,7 @@ function Pagina() {
                 <p>
                     Sair da conta <a href="/">Deslogar</a>
                 </p>
+                
             </div>
         </div>
 

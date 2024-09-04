@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import logo from '../images/logo.png'
 const tudo = () => {
   const [pagina, setPagina] = useState('sobre');
 
@@ -7,6 +7,7 @@ const tudo = () => {
     switch (pagina) {
       case 'sobre':
         return (
+          
           <div>
             <h2>Cadastro lixo </h2>
             <p>Cadastre o lixo aqui em baixo </p>
@@ -14,7 +15,7 @@ const tudo = () => {
               <a href="./Pagina" >Aqui!!</a>
           
         </p>
-          </div>
+          </div >
         );
       case 'comoFunciona':
         return (
@@ -52,11 +53,13 @@ const tudo = () => {
 
   return (
     <div>
+      <img src={logo} alt="logo" style={{width: '30px',width: '150px',}} /><br />
       <nav>
-        <button onClick={() => setPagina('sobre')}>Cadastro lixo</button>
-        <button onClick={() => setPagina('comoFunciona')}>Como Funciona</button>
-        <button onClick={() => setPagina('contato')}>Contato</button>
+        <button className='but'  onClick={() => setPagina('sobre')}>Cadastro lixo</button>
+        <button className='but'  onClick={() => setPagina('comoFunciona')}>Como Funciona</button>
+        <button className='but'  onClick={() => setPagina('contato')}>Contato</button>
      
+
 
       </nav>
       {renderizarPagina()}
