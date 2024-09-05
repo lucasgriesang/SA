@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
+import '../fundog.css'
 import logo from '../images/logo.png'
 
 function gg() {

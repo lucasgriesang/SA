@@ -1,9 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../images/logo.png'
+import '../fundog.css'
 function Lixo() {
     return (
-        <div className='quem'>
+        <div className='contato'>
               <img src={logo} alt="logo" style={{width: '300px',width: '25em', border: '300px',}} />     
             <h1>Quem Somos:</h1><br />
             <h2>A “nome da empresa” é uma empresa com o objetivo de descartar corretamente resíduos eletrônicos.</h2><br />

@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import logo from '../images/logo.png'
+import '../tudo.css'
 
 const tudo = () => {
   const [pagina, setPagina] = useState('sobre');
 
   const renderizarPagina = () => {
-
     switch (pagina) {
       case 'sobre':
         return (
@@ -21,6 +21,7 @@ const tudo = () => {
             </div>
           </div >
         );
+        
       case 'comoFunciona':
         return (
           <div>
@@ -63,7 +64,7 @@ const tudo = () => {
   };
 
   return (
-    <div >
+    <div className='tudo' >
       <nav>
         <button className='butcase' onClick={() => setPagina('sobre')}>Cadastro lixo</button>
         <button className='butcase' onClick={() => setPagina('comoFunciona')}>Como Funciona</button>

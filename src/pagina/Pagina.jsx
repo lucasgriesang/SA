@@ -1,6 +1,7 @@
 
 import React, { useState } from 'react';
 import logo from '../images/logo.png'
+import '../fundog.css'
 
 
 function Pagina() {
@@ -45,7 +46,7 @@ function Pagina() {
                     placeholder="Digite a data/mês"
 
                 />
-<button className='but' style={{width: '100%', height: '40px',marginTop: '40px',}}>Confirma</button>
+<button className='but'>Confirma</button>
                 <img src={logo} alt="logo" style={{ width: '300px', width: '200px', }} />
                 <p>
                     Confirma   <a href="./gg">Aqui!</a>

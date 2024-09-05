@@ -1,23 +1,11 @@
 
-body{
-  background-color: #8EBF6B;
-}
-
 a {
   font-weight: 500;
   color: #646cff;
   text-decoration: inherit;
 }
 a:hover {
-  color: #535bf2;
-}
-
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+color: blue;
 }
 
 h1 {
@@ -86,8 +74,6 @@ color: #1a1a1a;
   width: 100%;
   background-color: #FFDE59;
 
-
-
 }
 
 h2 {
@@ -104,6 +90,11 @@ form input {
   padding: 8px;
   margin-top: 5px;
   
+}
+button{
+  width: 150px;
+  height: 50px;
+
 }
 
 form button {
@@ -137,7 +128,7 @@ a:hover {
   text-decoration: underline;
 }
 
-/* src/ Não sei coloca spoha em um outro csss */
+/* css do pagina pagina caixa amarela   */
 .container {
   display: flex;
   flex-direction: column;
@@ -146,14 +137,11 @@ a:hover {
   padding: 20px;
   border: 1px solid #2BC7D9;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border: 1px solid #FFDE59;
   padding: 20px;
   border-radius: 5px;
   width: 300px;
   background-color: #FFDE59;
-  
-
 }
 
 .input-group {
@@ -175,14 +163,14 @@ a:hover {
   border-radius: 4px;
 
 }
-.quem{
+.contato{
   font-size: 11px;
 }
+/* css do h2 sair/voltar para tudo  */
 .sair{
 font-size: 30px;
 }
 .but{
-margin-top: 20px;
 background-color: #2BC7D9;
 width: 90%;
 height: 50px;
@@ -193,7 +181,7 @@ border-radius: 8px;
   font-size: 20px;
   font-family: inherit;
   border-color: black;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 .erro{
   font-size:15px;
@@ -203,15 +191,9 @@ border-radius: 5%;
 }
 p{
   font-size: 25px;
-  
 }
 label{
   font-size: 30px;
-}
-button{
-  width: 150px;
-  height: 50px;
-
 }
 input{
   border-radius: 30px;
@@ -224,6 +206,8 @@ input{
  background-color: #FFDE59;
  border-radius: 10px;
  margin-right: 20px;
- font-size: 19px;
+ font-size: 17px;
  margin-bottom: 350px;
+margin-right: 60px;
+
 }

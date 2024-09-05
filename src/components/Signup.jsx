@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import logo from '../images/logo.png'
+import '../fundog.css'
 
 const Signup = () => {
   const [email, setEmail] = useState('');
