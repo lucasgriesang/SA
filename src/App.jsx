@@ -10,6 +10,7 @@ import Tudo from './pagina/tudo';
 import Gg from './pagina/gg';
 import Teste from './teste/teste';
 
+
 function App() {
   return (
     <Router>
@@ -24,7 +25,7 @@ function App() {
           <Route path="/pagina/Pagina" element={<Pagina />} /> {}
           <Route path="/pagina/lixo" element={<Lixo />} />
           <Route path="/teste/teste" element={<Teste />} />
-                    
+
                   
         </Routes>
       </div>

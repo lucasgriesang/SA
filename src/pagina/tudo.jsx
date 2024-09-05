@@ -4,6 +4,7 @@ const tudo = () => {
   const [pagina, setPagina] = useState('sobre');
 
   const renderizarPagina = () => {
+  
     switch (pagina) {
       case 'sobre':
         return (
@@ -63,13 +64,13 @@ const tudo = () => {
   };
 
   return (
-    <div>
-      <img src={logo} alt="logo" style={{width: '30px',width: '150px',}} /><br />
+    <div >
       <nav>
-        <button className='but'  onClick={() => setPagina('sobre')}>Cadastro lixo</button><br />
-        <button className='but'  onClick={() => setPagina('comoFunciona')}>Como Funciona</button><br />
-        <button className='but'  onClick={() => setPagina('contato')}>Contato</button><br />
-     
+        <button className='but'  onClick={() => setPagina('sobre')}>Cadastro lixo</button>
+        <button className='but'  onClick={() => setPagina('comoFunciona')}>Como Funciona</button>
+        <button className='but'  onClick={() => setPagina('contato')}>Contato</button>
+        <img src={logo} alt="logo" style={{width: '300px',width: '200px',marginTop: '10px',}} /><br />
+
 
 
       </nav>

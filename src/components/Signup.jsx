@@ -7,28 +7,33 @@ const Signup = () => {
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
   const navigate = useNavigate();
-
   const handleSignup = (e) => {
     e.preventDefault();
-
+  
     if (password === confirmPassword) {
       navigate('../pagina/Tudo', { replace: true });
-      return;
+    } else {
+      alert('As senha não sao iguais ');
     }
     console.log('Signup', { email, password });
   };
+
   return (
     <div className="auth-container">
       <div class="teste">
         <h2 className='titulos'> Cadastro </h2><br />
+        <h2>______________________________________</h2>
+
         <form onSubmit={handleSignup}>
-          <label>
+          <label >
             E-mail:
             <input
               type="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
+              placeholder="Digite o email"
+
             />
           </label>
           <label>
@@ -38,6 +43,8 @@ const Signup = () => {
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               required
+              placeholder="Digite a senha"
+
             />
           </label>
           <label>
@@ -47,6 +54,7 @@ const Signup = () => {
               value={confirmPassword}
               onChange={(e) => setConfirmPassword(e.target.value)}
               required
+              placeholder="Digite a senha"
             />
 
           </label>

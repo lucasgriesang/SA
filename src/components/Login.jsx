@@ -20,6 +20,8 @@ const Login = () => {
     <div className="auth-container">
     <div class="teste">
       <h2 className='titulos' >Login</h2>
+      <h2>______________________________________</h2>
+
       <form onSubmit={handleLogin}>
         <label>
           E-mail:
@@ -28,6 +30,8 @@ const Login = () => {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required
+            placeholder="Digite o email"
+
           />
         </label>
         <label>
@@ -37,7 +41,10 @@ const Login = () => {
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             required
+            placeholder="Digite a senha"
           />
+                <h3>__________________________</h3>
+
                   <button type="submit" onClick={handleLogin} >Entrar</button><br />
 
           <img src={logo} alt="logo" style={{width: '300px',width: '200px',}} />   
