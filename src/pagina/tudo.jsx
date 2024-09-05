@@ -1,63 +1,62 @@
 import React, { useState } from 'react';
 import logo from '../images/logo.png'
+
 const tudo = () => {
   const [pagina, setPagina] = useState('sobre');
 
   const renderizarPagina = () => {
-  
+
     switch (pagina) {
       case 'sobre':
         return (
-          
           <div>
+               <div className="auth-container">
             <h2>Cadastro lixo </h2>
-            <p>Cadastre o lixo aqui em baixo </p>
             <p>
               <a href="./Pagina" >Aqui!!</a>
               <p>
-                    Sair da conta <a href="/">Deslogar</a>
-                </p>
-                
-        </p>
+                Sair da conta <a href="/">Deslogar</a>
+              </p>
+            </p>
+            </div>
           </div >
         );
       case 'comoFunciona':
         return (
           <div>
-            <h2>Como Funciona  </h2>
-            <p>Explicação de como funciona...</p>
-            <p>
-            contato <a href="./lixo" >Aqui!!</a>
-            <p>
-                    Sair da conta <a href="/">Deslogar</a>
+            <div className="auth-container">
+              <h2>Como Funciona  </h2>
+              <p>
+                contato <a href="./lixo" >Aqui!!</a>
+                <p>
+                  Sair da conta <a href="/">Deslogar</a>
                 </p>
-                
-        </p>
+              </p>
+            </div>
           </div>
 
         );
       case 'contato':
         return (
           <div>
-            <h2>Contato</h2>
-            <p>Informações de contato...</p>
-            <p>
-            contato <a href="./contato" >Aqui!!</a>
-            <p>
-                    Sair da conta <a href="/">Deslogar</a>
-                </p>     
-        </p>
+            <div className="auth-container">
+              <h2>Contato</h2>
+              <p>
+                contato <a href="./contato" >Aqui!!</a>
+                <p>
+                  Sair da conta <a href="/">Deslogar</a>
+                </p>
+              </p>
+            </div>
           </div>
         );
       default:
         return (
           <div>
-            <h2>Cadastro lixo </h2>
-            <p>Informações sobre a empresa...</p>
             <p>
-                    Sair da conta <a href="/">Deslogar</a>
-                </p>
-                
+              Sair da conta <a href="/">Deslogar</a>
+            </p>
+
           </div>
         );
     }
@@ -66,10 +65,9 @@ const tudo = () => {
   return (
     <div >
       <nav>
-        <button className='but'  onClick={() => setPagina('sobre')}>Cadastro lixo</button>
-        <button className='but'  onClick={() => setPagina('comoFunciona')}>Como Funciona</button>
-        <button className='but'  onClick={() => setPagina('contato')}>Contato</button>
-        <img src={logo} alt="logo" style={{width: '300px',width: '200px',marginTop: '10px',}} /><br />
+        <button className='butcase' onClick={() => setPagina('sobre')}>Cadastro lixo</button>
+        <button className='butcase' onClick={() => setPagina('comoFunciona')}>Como Funciona</button>
+        <button className='butcase' onClick={() => setPagina('contato')}>Contato</button><br />
 
 
 
