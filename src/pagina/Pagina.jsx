@@ -1,6 +1,7 @@
+
 import React, { useState } from 'react';
 import logo from '../images/logo.png'
- 
+
 
 function Pagina() {
     const [cep, setCep] = useState('');
@@ -35,22 +36,22 @@ function Pagina() {
             </div>
             <div className="input-group">
                 <label htmlFor="data-mes">Data/Mês:</label>
+                
                 <input
                     type="text"
                     id="data-mes"
                     value={dataMes}
                     onChange={handleDataMesChange}
                     placeholder="Digite a data/mês"
+
                 />
-                <img src={logo} alt="logo" style={{width: '300px',width: '200px',}} />    
+<button className='but' style={{width: '100%', height: '40px',marginTop: '40px',}}>Confirma</button>
+                <img src={logo} alt="logo" style={{ width: '300px', width: '200px', }} />
                 <p>
-
-                Confirma   <a href="./gg">Aqui!</a>
-
+                    Confirma   <a href="./gg">Aqui!</a>
                 </p>
                 <p>
-                Confirma(com erro )   <a href="./erro">Aqui!</a>
-
+                    Confirma(com erro )   <a href="./erro">Aqui!</a>
                 </p>
                 <p>
                     Voltar  <a href="./tudo">Aqui!</a>
@@ -58,10 +59,8 @@ function Pagina() {
                 <p>
                     Sair da conta <a href="/">Deslogar</a>
                 </p>
-                
             </div>
         </div>
-
     );
 }
 

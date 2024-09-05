@@ -13,10 +13,6 @@ const Login = () => {
     e.preventDefault();
     navigate ('./pagina/Tudo');
     console.log('Login', { email, password });
-
-
-    
-
   };
 
   return (
