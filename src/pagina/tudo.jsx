@@ -10,7 +10,7 @@ const tudo = () => {
       case 'sobre':
         return (
           <div>
-               <div className="auth-container">
+               <div className="auth-container2">
             <h2>Cadastro lixo </h2>
             <p>
               <a href="./Pagina" >Aqui!!</a>
@@ -25,7 +25,7 @@ const tudo = () => {
       case 'comoFunciona':
         return (
           <div>
-            <div className="auth-container">
+            <div className="auth-container2">
               <h2>Como Funciona  </h2>
               <p>
                 contato <a href="./lixo" >Aqui!!</a>
@@ -40,7 +40,7 @@ const tudo = () => {
       case 'contato':
         return (
           <div>
-            <div className="auth-container">
+            <div className="auth-container2">
               <h2>Contato</h2>
               <p>
                 contato <a href="./contato" >Aqui!!</a>
@@ -54,9 +54,6 @@ const tudo = () => {
       default:
         return (
           <div>
-            <p>
-              Sair da conta <a href="/">Deslogar</a>
-            </p>
 
           </div>
         );
@@ -74,8 +71,13 @@ const tudo = () => {
 
       </nav>
       {renderizarPagina()}
+      <p>
+              Sair da conta <a href="/">Deslogar</a>
+            </p>
+
     </div>
-  );
+
+);
 };
 
 export default tudo;
