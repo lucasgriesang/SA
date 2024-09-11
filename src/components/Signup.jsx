@@ -14,7 +14,7 @@ const Signup = () => {
     if (password === confirmPassword) {
       navigate('../pagina/Tudo', { replace: true });
     } else {
-      alert('As senha não sao iguais ');
+      alert('A senha não são iguais  ');
     }
     console.log('Signup', { email, password });
   };
