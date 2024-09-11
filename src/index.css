@@ -99,7 +99,7 @@ form input {
 button {
   width: 150px;
   height: 50px;
-
+  margin-top: 10px;
 }
 
 form button {
@@ -110,14 +110,13 @@ form button {
   border-radius: 5px;
   cursor: pointer;
   border-radius: 10px;
-  border-color: black;
 }
 
 form button:hover {
   background-color: #2BC7D9;
   width: 155px;
   height: 55px;
-  border-color: black;
+
 }
 
 p {
@@ -172,7 +171,7 @@ a:hover {
   font-size: 11px;
 }
 
-/* css do h2 sair/voltar para tudo  */
+/* ;-; meu deus  */
 .sair {
   font-size: 30px;
 }
@@ -192,7 +191,7 @@ a:hover {
 }
 
 .erro {
-  font-size: 15px;
+  font-size: 20px; 
 }
 
 img {

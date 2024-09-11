@@ -22,13 +22,14 @@ const Login = () => {
     <div class="teste">
       <h2 className='titulos' >Login</h2>
       <h2>______________________________________</h2>
-
+      
       <form onSubmit={handleLogin}>
         <label>
           E-mail:
           <input
             type="email"
             value={email}
+
             onChange={(e) => setEmail(e.target.value)}
             required
             placeholder="Digite o email"
@@ -44,7 +45,6 @@ const Login = () => {
             required
             placeholder="Digite a senha"
           />
-                <h3>__________________________</h3>
 
                   <button type="submit" onClick={handleLogin} >Entrar</button><br />
 

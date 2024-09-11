@@ -14,9 +14,7 @@ const tudo = () => {
             <h2>Cadastro lixo </h2>
             <p>
               <a href="./Pagina" >Aqui!!</a>
-              <p>
-                Sair da conta <a href="/">Deslogar</a>
-              </p>
+              
             </p>
             </div>
           </div >
@@ -29,9 +27,7 @@ const tudo = () => {
               <h2>Como Funciona  </h2>
               <p>
                 contato <a href="./lixo" >Aqui!!</a>
-                <p>
-                  Sair da conta <a href="/">Deslogar</a>
-                </p>
+               
               </p>
             </div>
           </div>
@@ -44,9 +40,7 @@ const tudo = () => {
               <h2>Contato</h2>
               <p>
                 contato <a href="./contato" >Aqui!!</a>
-                <p>
-                  Sair da conta <a href="/">Deslogar</a>
-                </p>
+              
               </p>
             </div>
           </div>
@@ -71,10 +65,10 @@ const tudo = () => {
 
       </nav>
       {renderizarPagina()}
+     
       <p>
               Sair da conta <a href="/">Deslogar</a>
             </p>
-
     </div>
 
 );
