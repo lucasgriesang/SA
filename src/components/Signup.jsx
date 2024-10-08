@@ -63,7 +63,7 @@ const Signup = () => {
           <img src={logo} alt="logo" style={{ width: '300px', height: '200px' }} />     
 
           <p>
-          ja possue uma conta ? <a href="/" >logue-se</a>
+          já possue uma conta? <a href="/" >logue-se</a>
         </p>
        
         </form>

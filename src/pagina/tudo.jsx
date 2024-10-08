@@ -56,13 +56,12 @@ const tudo = () => {
 
   return (
     <div className='tudo' >
+    
       <nav>
+                    
         <button className='butcase' onClick={() => setPagina('sobre')}>Cadastro lixo</button>
         <button className='butcase' onClick={() => setPagina('comoFunciona')}>Como Funciona</button>
         <button className='butcase' onClick={() => setPagina('contato')}>Contato</button><br />
-
-
-
       </nav>
       {renderizarPagina()}
      

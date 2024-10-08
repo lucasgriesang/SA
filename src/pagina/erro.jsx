@@ -6,7 +6,7 @@ import '../fundog.css'
 function erro() {
     return (
         <div className='quem'>
-            <h1>Ocoreu um erro </h1>
+            <h1>Ocorreu um erro </h1>
             <h2>Ocorreu um erro em seu site, por favor certifique-se de que as informações fornecidas estão corretas. 
 Caso haja algum engano, entre em contato aqui.
  </h2>
