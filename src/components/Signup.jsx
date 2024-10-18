@@ -22,8 +22,7 @@ const Signup = () => {
   return (
     <div className="auth-container">
       <div class="teste">
-        <h2 className='titulos'> Cadastro </h2><br />
-        <h2>______________________________________</h2>
+        <h1 className='titulos'> Cadastro </h1><br />
 
         <form onSubmit={handleSignup}>
           <label >

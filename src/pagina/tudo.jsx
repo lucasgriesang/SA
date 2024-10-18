@@ -57,9 +57,7 @@ const tudo = () => {
                     <p>
                         Confirma (com erro) <a href="./erro">Aqui!</a>
                     </p>
-                    <p>
-                        Voltar <a href="./tudo">Aqui!</a>
-                    </p>
+                  
                     <p>
                         Sair da conta <a href="/">Deslogar</a>
                     </p>
